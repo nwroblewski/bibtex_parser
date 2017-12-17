@@ -17,7 +17,7 @@ public class PublicationInput {
     public PublicationInput(){
         this.publication = new HashMap<>();
     }
-    public Map<IField, String> getFields() {
-        return (Map<IField, String>) this.publication.values();
+    public Map<Field, String> getFields() {
+        return (Map<Field, String>) this.publication.values();
     }
 }

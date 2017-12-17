@@ -357,5 +357,5 @@ information).
 
 @MISC{random-note-crossref,
    key = {Volume-2},
-   note = "Volume~2 is listed under Knuth \cite{book-full}"
+   note = "Volume~2 is listed under Knuth \cite{book-full}",
 }

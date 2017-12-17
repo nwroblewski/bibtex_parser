@@ -12,6 +12,11 @@ public class Type implements ITypes.IType {
         return name;
     }
 
+
+    @Override
+    public String toString(){
+        return this.getName();
+    }
     @Override
     public boolean equals(Object o) {
         if(this == o ) return true;

@@ -6,6 +6,8 @@ import BibTexParser.Parser.Handlers.TypeHandler;
 import BibTexParser.Types.Field;
 import BibTexParser.Types.Type;
 
+import java.util.Collection;
+import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
@@ -22,6 +24,22 @@ public class Main {
            // System.out.println(pair.getKey() + " = " + pair.getValue());
      //       it.remove();
     //    }
+        Iterator it = input.publication.entrySet().iterator();
+        while(it.hasNext()){
+            Map.Entry pair = (Map.Entry)it.next();
+            Map<Field, String> mapa =(Map<Field, String>) pair.getValue();
+            Iterator vt = mapa.entrySet().iterator();
+            System.out.println(pair.getKey().toString().toUpperCase());
+            while(vt.hasNext()){
+                Map.Entry pair2 = (Map.Entry)vt.next();
+                System.out.println(pair2.getKey() + " + " + pair2.getValue());
+                vt.remove();
+            }
+            it.remove();
+        }
+
 
     }
+
+
 }

@@ -15,6 +15,10 @@ public class Field implements ITypes.IField {
         return false;
     }
     @Override
+    public String toString(){
+        return getName();
+    }
+    @Override
     public int hashCode(){
         if(name == null) return 0;
         return name.hashCode();
