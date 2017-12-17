@@ -9,7 +9,7 @@ public class Main {
 
         Parser parser = new Parser("/home/miki/bibtex/bib");
         PublicationInput input = parser.Parse(); // w tym miejscu mamy obiekt zawierający wszystkie publikacje
-
+        
 
     }
 }

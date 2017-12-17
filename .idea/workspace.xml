@@ -2,28 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3558158-f7d0-4ab8-ace1-ae967475a04a" name="Default" comment="c">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/junit_4_12.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/org_junit_contrib_junit_theories_4_12.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/org_junit_jupiter_junit_jupiter_api_5_0_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BibTexParser/Inputs/PublicationInput.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BibTexParser/Parser/Handlers/Handler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BibTexParser/Parser/Main.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BibTexParser/Types/DefinedTypes/IDefined.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/BlocksParser_blockChecker_Test.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/BibTexParser/Parser/Parser.java" afterPath="$PROJECT_DIR$/src/BibTexParser/Parser/BlocksParser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bib" afterPath="$PROJECT_DIR$/bib" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bibtex.iml" afterPath="$PROJECT_DIR$/bibtex.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/bibtex/.idea/workspace.xml" afterPath="$PROJECT_DIR$/out/production/bibtex/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/bibtex/bib" afterPath="$PROJECT_DIR$/out/production/bibtex/bib" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/bibtex/bibtex.iml" afterPath="$PROJECT_DIR$/out/production/bibtex/bibtex.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/bibtex/src/BibTexParser/Parser/Loader.java" afterPath="$PROJECT_DIR$/out/production/bibtex/src/BibTexParser/Parser/Loader.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/bibtex/src/BibTexParser/Parser/Parser.java" afterPath="$PROJECT_DIR$/out/production/bibtex/src/BibTexParser/Parser/Parser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/bibtex/src/BibTexParser/Types/DefinedTypes/BibtexTypes.java" afterPath="$PROJECT_DIR$/out/production/bibtex/src/BibTexParser/Types/DefinedTypes/BibtexTypes.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/bibtex/src/BibTexParser/Types/Type.java" afterPath="$PROJECT_DIR$/out/production/bibtex/src/BibTexParser/Types/Type.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BibTexParser/Parser/Loader.java" afterPath="$PROJECT_DIR$/src/BibTexParser/Parser/Loader.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BibTexParser/Types/DefinedTypes/BibtexTypes.java" afterPath="$PROJECT_DIR$/src/BibTexParser/Types/DefinedTypes/BibtexTypes.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BibTexParser/Types/Type.java" afterPath="$PROJECT_DIR$/src/BibTexParser/Types/Type.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -73,7 +52,7 @@
         <entry file="file://$PROJECT_DIR$/src/BibTexParser/Parser/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="165">
-              <caret line="11" column="8" lean-forward="false" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -505,7 +484,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="94" y="81" width="1366" height="742" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -515,7 +493,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32866043" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32866043" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -742,7 +720,7 @@
     <entry file="file://$PROJECT_DIR$/src/BibTexParser/Parser/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
-          <caret line="11" column="8" lean-forward="false" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
