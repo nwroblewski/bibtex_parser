@@ -3,6 +3,10 @@ package BibTexParser.Types;
 public class Type implements ITypes.IType {
     String name;
 
+
+    public Type(String name){
+        this.name=name;
+    }
     @Override
     public String getName() {
         return name;
