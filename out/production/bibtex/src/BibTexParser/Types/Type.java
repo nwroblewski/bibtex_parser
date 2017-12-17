@@ -13,7 +13,12 @@ public class Type implements ITypes.IType {
     }
 
     @Override
-    public boolean equals() {
+    public boolean equals(Object o) {
+        if(this == o ) return true;
+        if(o == null) return false;
+        if(getClass() != o.getClass()) return false;
+        Type type = (Type) o;
+        if(type.getName().equals(this.getName())) return true;
         return false;
     }
     @Override

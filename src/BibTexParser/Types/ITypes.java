@@ -48,7 +48,7 @@ public interface ITypes {
         List<Field> getFields();
         interface IType {
             String getName();
-            boolean equals();
+            boolean equals(Object o);
             int hashCode();
         }
         interface IField {

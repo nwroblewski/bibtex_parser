@@ -28,6 +28,7 @@ public class Parser {
             while (this.loader.entryNotDone(this.loader.reader)) {
                 Handler handler = blockChecker(this.loader.nextEntry());
                 if(handler!=null && !handler.name.equals("@STRING")) TypeHandler.HandleType(handler,inpute);
+                // tutaj stringi
             }
 
         }
