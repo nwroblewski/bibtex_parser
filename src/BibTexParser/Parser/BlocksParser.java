@@ -38,7 +38,7 @@ public class BlocksParser {
             if(builder.toString().equals("@STRING")){
                 return new Handler(builder.toString(),reader);
             }
-            else if(builder.charAt(0) == '@') {
+            else if(builder.charAt(0) == '@' && !builder.toString().equals("@PREAMBLE")) {
                 //typehandler będzie pomijał
                 //TypeHandler.HandleType(builder.toString().toLowerCase(),reader);
                 // here typeHandler will handle the type given to it and also given fields
@@ -46,7 +46,7 @@ public class BlocksParser {
             }
         }
         catch (IOException e) {
-            System.out.println(e.getMessage());
+           // System.out.println(e.getMessage());
         }
         return null;
     }

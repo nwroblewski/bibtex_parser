@@ -11,7 +11,12 @@ public class Field implements ITypes.IField {
     }
 
     @Override
-    public boolean equals() {
+    public boolean equals(Object o) {
+        if(this == o ) return true;
+        if(o == null) return false;
+        if(getClass() != o.getClass()) return false;
+        Field field = (Field) o;
+        if(field.getName().equals(this.getName())) return true;
         return false;
     }
     @Override

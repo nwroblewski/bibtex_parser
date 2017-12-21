@@ -1,19 +1,16 @@
 package BibTexParser.Parser.Handlers;
 
-import BibTexParser.Inputs.PublicationInput;
-import BibTexParser.Types.ITypes;
-import BibTexParser.Types.Type;
+import BibTexParser.Inputs.AllPublications;
 
 import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.StringReader;
 import java.util.HashMap;
 import java.util.Map;
 import BibTexParser.Types.Field;
 
 public class TypeHandler {
 
-    public static void HandleType(Handler handler, PublicationInput input) throws IOException {
+    public static void HandleType(Handler handler, AllPublications input) throws IOException {
       try {
           Map<Field, String> fields = new HashMap<>();
           StringBuilder builder = new StringBuilder();
@@ -26,7 +23,7 @@ public class TypeHandler {
               if (charsRead > 0)
                 builder.append(c, 0, charsRead);
           } while (charsRead > 0);
-          String[] pola = builder.toString().split(",");
+          String[] pola = builder.toString().split(",[^ ]");
 
           //System.out.println(handler.name.substring(1).toLowerCase());
          for(String d : pola){
@@ -43,7 +40,7 @@ public class TypeHandler {
          // System.out.println("pole: "+t[0].trim()+" ma wartość: " + t[1].trim());
       }
       catch(Exception e){
-        System.out.println(e.getMessage());
+        //System.out.println("Parse error (@link TypeHandler) : " +e.getMessage());
       }
 
         //czyta i splituje po przecinkach, jest git!

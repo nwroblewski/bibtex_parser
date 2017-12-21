@@ -1,7 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e3558158-f7d0-4ab8-ace1-ae967475a04a" name="Default" comment="c" />
+    <list default="true" id="e3558158-f7d0-4ab8-ace1-ae967475a04a" name="Default" comment="c">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BibTexParser/Inputs/PublicationInput2.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/bibtex/BibTexParser/Inputs/PublicationInput.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/bibtex/Nowy plik" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/bibtex/src/BibTexParser/Inputs/PublicationInput.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/BibTexParser/Inputs/PublicationInput.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/bibtex/BibTexParser/Parser/BlocksParser.class" afterPath="$PROJECT_DIR$/out/production/bibtex/BibTexParser/Parser/BlocksParser.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/bibtex/BibTexParser/Parser/Handlers/FieldsHandler.class" afterPath="$PROJECT_DIR$/out/production/bibtex/BibTexParser/Parser/Handlers/FieldsHandler.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/bibtex/BibTexParser/Parser/Handlers/TypeHandler.class" afterPath="$PROJECT_DIR$/out/production/bibtex/BibTexParser/Parser/Handlers/TypeHandler.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/bibtex/BibTexParser/Parser/Main.class" afterPath="$PROJECT_DIR$/out/production/bibtex/BibTexParser/Parser/Main.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/bibtex/BibTexParser/Parser/Parser.class" afterPath="$PROJECT_DIR$/out/production/bibtex/BibTexParser/Parser/Parser.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bib" afterPath="$PROJECT_DIR$/bib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/bibtex/.idea/workspace.xml" afterPath="$PROJECT_DIR$/out/production/bibtex/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/bibtex/bib" afterPath="$PROJECT_DIR$/out/production/bibtex/bib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/bibtex/src/BibTexParser/Parser/BlocksParser.java" afterPath="$PROJECT_DIR$/out/production/bibtex/src/BibTexParser/Parser/BlocksParser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/bibtex/src/BibTexParser/Parser/Handlers/FieldsHandler.java" afterPath="$PROJECT_DIR$/out/production/bibtex/src/BibTexParser/Parser/Handlers/FieldsHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/bibtex/src/BibTexParser/Parser/Handlers/TypeHandler.java" afterPath="$PROJECT_DIR$/out/production/bibtex/src/BibTexParser/Parser/Handlers/TypeHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/bibtex/src/BibTexParser/Parser/Main.java" afterPath="$PROJECT_DIR$/out/production/bibtex/src/BibTexParser/Parser/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/bibtex/src/BibTexParser/Parser/Parser.java" afterPath="$PROJECT_DIR$/out/production/bibtex/src/BibTexParser/Parser/Parser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BibTexParser/Parser/BlocksParser.java" afterPath="$PROJECT_DIR$/src/BibTexParser/Parser/BlocksParser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BibTexParser/Parser/Handlers/FieldsHandler.java" afterPath="$PROJECT_DIR$/src/BibTexParser/Parser/Handlers/FieldsHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BibTexParser/Parser/Handlers/TypeHandler.java" afterPath="$PROJECT_DIR$/src/BibTexParser/Parser/Handlers/TypeHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BibTexParser/Parser/Main.java" afterPath="$PROJECT_DIR$/src/BibTexParser/Parser/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BibTexParser/Parser/Parser.java" afterPath="$PROJECT_DIR$/src/BibTexParser/Parser/Parser.java" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -12,18 +37,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Loader.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/BibTexParser/Parser/Loader.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="23" column="41" lean-forward="false" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="StringHandler.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BibTexParser/Parser/Handlers/StringHandler.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -34,23 +47,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TypeHandler.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TypeHandler.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BibTexParser/Parser/Handlers/TypeHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="23" column="7" lean-forward="true" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/BibTexParser/Parser/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <state relative-caret-position="540">
+              <caret line="42" column="59" lean-forward="false" selection-start-line="42" selection-start-column="59" selection-end-line="42" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -61,8 +62,69 @@
       <file leaf-file-name="Parser.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BibTexParser/Parser/Parser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="356">
-              <caret line="30" column="13" lean-forward="false" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+            <state relative-caret-position="420">
+              <caret line="32" column="58" lean-forward="false" selection-start-line="32" selection-start-column="58" selection-end-line="32" selection-end-column="58" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Loader.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/BibTexParser/Parser/Loader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1035">
+              <caret line="72" column="21" lean-forward="false" selection-start-line="72" selection-start-column="21" selection-end-line="72" selection-end-column="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PublicationInput2.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/BibTexParser/Inputs/PublicationInput2.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="11" column="12" lean-forward="false" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AllPublications.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/BibTexParser/Inputs/AllPublications.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="8" column="41" lean-forward="false" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
+              <folding>
+                <element signature="e#189#190#0" expanded="true" />
+                <element signature="e#237#238#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FieldsHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/BibTexParser/Parser/Handlers/FieldsHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="570">
+              <caret line="44" column="5" lean-forward="false" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/BibTexParser/Parser/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="23" column="46" lean-forward="true" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -73,8 +135,8 @@
       <file leaf-file-name="BibtexTypes.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BibTexParser/Types/DefinedTypes/BibtexTypes.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="32" column="44" lean-forward="false" selection-start-line="32" selection-start-column="44" selection-end-line="32" selection-end-column="44" />
+            <state relative-caret-position="1035">
+              <caret line="79" column="9" lean-forward="false" selection-start-line="79" selection-start-column="9" selection-end-line="79" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -83,36 +145,10 @@
       <file leaf-file-name="BlocksParser.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BibTexParser/Parser/BlocksParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="446">
-              <caret line="49" column="9" lean-forward="false" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
+            <state relative-caret-position="585">
+              <caret line="44" column="62" lean-forward="false" selection-start-line="44" selection-start-column="62" selection-end-line="44" selection-end-column="62" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Handler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/BibTexParser/Parser/Handlers/Handler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="12" column="6" lean-forward="false" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PublicationInput.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/BibTexParser/Inputs/PublicationInput.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="43" lean-forward="false" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#496#497#0" expanded="true" />
-                <element signature="e#546#547#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -170,8 +206,6 @@
         <option value="$PROJECT_DIR$/src/parser/Loader.java" />
         <option value="$PROJECT_DIR$/src/BibTexParser/parser/Loader.java" />
         <option value="$PROJECT_DIR$/src/BibTexParser/parser/Parser/Loader.java" />
-        <option value="$PROJECT_DIR$/src/BibTexParser/Types/ITypes.java" />
-        <option value="$PROJECT_DIR$/src/BibTexParser/Types/Type.java" />
         <option value="$PROJECT_DIR$/src/BibTexParser/Parser/Loader.java" />
         <option value="$PROJECT_DIR$/src/BibTexParser/Parser/TypeHandler.java" />
         <option value="$PROJECT_DIR$/src/tests/BlocksParser_blockChecker_TEST.java" />
@@ -180,10 +214,17 @@
         <option value="$PROJECT_DIR$/src/tests/BlocksParser_blockChecker_Test.java" />
         <option value="$PROJECT_DIR$/src/BibTexParser/Parser/Handlers/StringHandler.java" />
         <option value="$PROJECT_DIR$/src/BibTexParser/Parser/Handlers/Handler.java" />
-        <option value="$PROJECT_DIR$/src/BibTexParser/Parser/BlocksParser.java" />
+        <option value="$PROJECT_DIR$/src/BibTexParser/Types/ITypes.java" />
+        <option value="$PROJECT_DIR$/src/BibTexParser/Types/Type.java" />
+        <option value="$PROJECT_DIR$/src/BibTexParser/Types/Field.java" />
         <option value="$PROJECT_DIR$/src/BibTexParser/Inputs/PublicationInput.java" />
-        <option value="$PROJECT_DIR$/src/BibTexParser/Parser/Handlers/TypeHandler.java" />
+        <option value="$PROJECT_DIR$/src/BibTexParser/Parser/BlocksParser.java" />
+        <option value="$PROJECT_DIR$/src/BibTexParser/Inputs/AllPublications.java" />
+        <option value="$PROJECT_DIR$/src/BibTexParser/Inputs/PublicationInput2.java" />
+        <option value="$PROJECT_DIR$/src/BibTexParser/Verifier.java" />
+        <option value="$PROJECT_DIR$/src/BibTexParser/Parser/Handlers/FieldsHandler.java" />
         <option value="$PROJECT_DIR$/src/BibTexParser/Parser/Parser.java" />
+        <option value="$PROJECT_DIR$/src/BibTexParser/Parser/Handlers/TypeHandler.java" />
         <option value="$PROJECT_DIR$/src/BibTexParser/Parser/Main.java" />
       </list>
     </option>
@@ -209,7 +250,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -252,30 +294,14 @@
             </path>
             <path>
               <item name="bibtex" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bibtex" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="BibTexParser" type="462c0819:PsiDirectoryNode" />
-              <item name="Types" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bibtex" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bibtex" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="BibTexParser" type="462c0819:PsiDirectoryNode" />
-              <item name="Types" type="462c0819:PsiDirectoryNode" />
-              <item name="DefinedTypes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bibtex" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -524,10 +550,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/parser/Mastersthesis.java" />
-    <entry file="file://$PROJECT_DIR$/src/parser/Phdthesis.java" />
-    <entry file="file://$PROJECT_DIR$/src/parser/Misc.java" />
-    <entry file="file://$PROJECT_DIR$/src/parser/Unpublished.java" />
     <entry file="file://$PROJECT_DIR$/src/parser/Techreport.java" />
     <entry file="file://$PROJECT_DIR$/src/BibTexParser/Parser/Loader.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -588,25 +610,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BibTexParser/Types/ITypes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="41" column="30" lean-forward="true" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BibTexParser/Types/Type.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="16" column="21" lean-forward="true" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
-          <folding>
-            <element signature="e#266#267#0" expanded="false" />
-            <element signature="e#294#295#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/tests/BlocksParser_blockChecker_Test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="615">
@@ -614,31 +617,89 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BibTexParser/Types/Field.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="15" column="5" lean-forward="false" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-          <folding>
-            <element signature="e#262#263#0" expanded="false" />
-            <element signature="e#290#291#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/BibTexParser/Types/DefinedTypes/IDefined.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="41">
           <caret line="12" column="25" lean-forward="false" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BibTexParser/Types/ITypes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="51" column="27" lean-forward="true" selection-start-line="51" selection-start-column="27" selection-end-line="51" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BibTexParser/Types/Field.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="25" column="1" lean-forward="false" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BibTexParser/Parser/Handlers/Handler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="32" lean-forward="false" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
           <folding>
-            <element signature="imports" expanded="false" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BibTexParser/Parser/Loader.java">
+    <entry file="file://$PROJECT_DIR$/src/BibTexParser/Types/Type.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="23" column="41" lean-forward="false" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
+        <state relative-caret-position="195">
+          <caret line="17" column="30" lean-forward="false" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BibTexParser/Verifier.java" />
+    <entry file="file://$PROJECT_DIR$/src/BibTexParser/Types/DefinedTypes/BibtexTypes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1035">
+          <caret line="79" column="9" lean-forward="false" selection-start-line="79" selection-start-column="9" selection-end-line="79" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BibTexParser/Inputs/AllPublications.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="8" column="41" lean-forward="false" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
+          <folding>
+            <element signature="e#189#190#0" expanded="true" />
+            <element signature="e#237#238#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BibTexParser/Inputs/PublicationInput2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="11" column="12" lean-forward="false" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BibTexParser/Inputs/PublicationInput.java" />
+    <entry file="file://$PROJECT_DIR$/src/BibTexParser/Parser/Handlers/FieldsHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="44" column="5" lean-forward="false" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BibTexParser/Parser/BlocksParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="44" column="62" lean-forward="false" selection-start-line="44" selection-start-column="62" selection-end-line="44" selection-end-column="62" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -653,60 +714,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BibTexParser/Parser/Handlers/Handler.java">
+    <entry file="file://$PROJECT_DIR$/src/BibTexParser/Parser/Loader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="12" column="6" lean-forward="false" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+        <state relative-caret-position="1035">
+          <caret line="72" column="21" lean-forward="false" selection-start-line="72" selection-start-column="21" selection-end-line="72" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BibTexParser/Parser/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BibTexParser/Inputs/PublicationInput.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="43" lean-forward="false" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#496#497#0" expanded="true" />
-            <element signature="e#546#547#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BibTexParser/Parser/BlocksParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="49" column="9" lean-forward="false" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BibTexParser/Types/DefinedTypes/BibtexTypes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="32" column="44" lean-forward="false" selection-start-line="32" selection-start-column="44" selection-end-line="32" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/BibTexParser/Parser/Parser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="30" column="13" lean-forward="false" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+        <state relative-caret-position="420">
+          <caret line="32" column="58" lean-forward="false" selection-start-line="32" selection-start-column="58" selection-end-line="32" selection-end-column="58" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -715,8 +736,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/BibTexParser/Parser/Handlers/TypeHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="23" column="7" lean-forward="true" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
+        <state relative-caret-position="540">
+          <caret line="42" column="59" lean-forward="false" selection-start-line="42" selection-start-column="59" selection-end-line="42" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BibTexParser/Parser/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="46" lean-forward="true" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>BibTexParserDocs</title>
+</head>
+<center>
+<body>
+    <h1>Parser BibTex napisany w ramach kursu programowania obiektowego drugiego roku studiów na kierunku Informatyka 
+    na wydziale Informatyki, Elektroniki i Telekomunikacji</h1>
+    <p>
+        Parser został napisany przeze mnie. Przyjąłem kilka uproszczeń względem oryginalnego
+        pliku bazy bibliograficznej, tj.: <br><br>
+            1. Zakładam, że ostatnie pole w deklaracji rekordu również musi mieć "," na końcu. <br>
+            2. Wszystkie wartości pól są zawarte w następujący sposób "wartość". <br>
+        Parser w całości ignoruje bloki tekstu, które nie są deklaracjami rekordów, jak również "@preamble".<br>
+        W chwili obecnej parser ma następujące klasy: <br>
+        <a href = PublicationInput2.html>PublicationInput2</a>,
+        AllPublications, 
+        Parser, 
+        Loader, 
+        BlocksParser, 
+        TypeHandler, 
+        StringHandler, 
+        FieldsHandler, 
+        ShowPubs, 
+        SearchPubs, 
+        PrintCategory, 
+        Contains, 
+        ArgsVerifier, 
+        AuthorsCreator, 
+        CategoriesCreator, 
+        Type, 
+        Field, 
+        BibtexTypes, 
+        Properties <br>
+        
+        Jako argumenty parser przyjmuje: <br>
+        1. Ścieżkę do pliku, <br>
+        2. Nazwiska autorów oddzielone przecinkami ( w razie ich braku konieczne jest wstawienie '-' ), <br>
+        3. Nazwy kategorii, oddzielone przecinkami ( w razie ich braku konieczne jest wstawienie '-' ), <br>
+        4. Znak obramowania (wybór domyślnego znaku jakim jest '*' następuje przez wstawienie '-')
+        
+    </p>
+</body>
+    </center>
+</html>

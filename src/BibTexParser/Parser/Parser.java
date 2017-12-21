@@ -1,11 +1,8 @@
 package BibTexParser.Parser;
 
-import BibTexParser.Inputs.PublicationInput;
+import BibTexParser.Inputs.AllPublications;
 import BibTexParser.Parser.Handlers.Handler;
-import BibTexParser.Parser.BlocksParser;
 import BibTexParser.Parser.Handlers.TypeHandler;
-
-import java.io.IOException;
 
 import static BibTexParser.Parser.BlocksParser.blockChecker;
 
@@ -20,8 +17,8 @@ public class Parser {
 
     }
 
-    public PublicationInput Parse() {
-        PublicationInput inpute = new PublicationInput();
+    public AllPublications Parse() {
+        AllPublications inpute = new AllPublications();
         try {
             this.loader.Open();
 
@@ -33,7 +30,7 @@ public class Parser {
 
         }
         catch (Exception e) {
-            System.out.println(e.getMessage());
+            //System.out.println("Parse error (@link Parser): " +e.getMessage());
         }
         return inpute;
     }

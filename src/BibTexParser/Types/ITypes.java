@@ -53,7 +53,7 @@ public interface ITypes {
         }
         interface IField {
             String getName();
-            boolean equals();
+            boolean equals(Object o);
             int hashCode();
         }
     }
