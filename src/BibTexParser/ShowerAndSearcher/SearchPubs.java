@@ -1,12 +1,12 @@
 package BibTexParser.ShowerAndSearcher;
 
 import BibTexParser.Inputs.AllPublications;
-import BibTexParser.Inputs.PublicationInput2;
+import BibTexParser.Inputs.PublicationInput;
 import BibTexParser.Types.Field;
+import BibTexParser.Types.Type;
+
 import java.util.regex.Matcher;
 import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.Map;
 import java.util.regex.Pattern;
 
 /**
@@ -14,11 +14,16 @@ import java.util.regex.Pattern;
  * give a list of those which i want to print with given authors
  */
 public class SearchPubs {
-
+    /**
+     *
+     * @param authors table of authors whom publications will be printed
+     * @param pubs arraylist of all publications
+     * @return arraylist with all publications written by one of the authors
+     */
     protected static ArrayList search(String [] authors, AllPublications pubs){
-        ArrayList<PublicationInput2> publications = new ArrayList<>();
+        ArrayList<PublicationInput> publications = new ArrayList<>();
         try{
-            for(PublicationInput2 input : pubs.publist){
+            for(PublicationInput input : pubs.publist){
                 if(input.fields.containsKey(new Field("author"))){
                     for(String a: authors) {
                         Pattern r =  Pattern.compile(a);

@@ -1,7 +1,7 @@
 package BibTexParser.Parser.Handlers;
 
 import BibTexParser.Inputs.AllPublications;
-import BibTexParser.Inputs.PublicationInput2;
+import BibTexParser.Inputs.PublicationInput;
 import BibTexParser.Types.Field;
 import BibTexParser.Types.Type;
 
@@ -39,7 +39,7 @@ public class FieldsHandler {
         }
         if (!typ.equals("preamble") && !fields.isEmpty()) {
             Type type = new Type(typ);
-            PublicationInput2 input2 = new PublicationInput2(type, fields);
+            PublicationInput input2 = new PublicationInput(type, fields);
             input.publist.add(input2);
         }
     }

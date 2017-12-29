@@ -16,6 +16,11 @@ public class Loader {
     //    if(instance == null) instance = new FileReader();
     //    return instance;
    //   }
+
+    /**
+     * otwiera plik podany w linii komend jako pierwszy argument
+     * @throws Exception
+     */
     public void Open() throws Exception {
         try {
             if(path == null || path.length()==0) throw new FileNotFoundException("The filepath is empty, which is invalid.");

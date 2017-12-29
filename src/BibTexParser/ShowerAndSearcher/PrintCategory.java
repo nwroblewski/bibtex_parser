@@ -1,11 +1,17 @@
 package BibTexParser.ShowerAndSearcher;
 
-import BibTexParser.Inputs.PublicationInput2;
+import BibTexParser.Inputs.PublicationInput;
 import BibTexParser.Types.Field;
 
 public class PrintCategory {
-
-    public static void printC(PublicationInput2 input, String c, String o, int width ){
+    /**
+     *
+     * @param input publicationinput object to be printed
+     * @param c field name to be print
+     * @param o character represented as string of lenght one used to print rame
+     * @param width the width of rame
+     */
+    public static void printC(PublicationInput input, String c, String o, int width ){
         if(input.fields.containsKey(new Field(c)) && !c.equals("viewKey")){
            // System.out.println("");
             System.out.print(o+" ");

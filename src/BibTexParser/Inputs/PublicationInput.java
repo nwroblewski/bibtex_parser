@@ -7,11 +7,11 @@ import BibTexParser.Types.Field;
 import java.util.HashMap;
 import java.util.Map;
 
-public class PublicationInput2 {
+public class PublicationInput {
      public Type typ;
      public Map<Field, String> fields = new HashMap<>();
 
-    public PublicationInput2(Type typ, Map<Field,String> map){
+    public PublicationInput(Type typ, Map<Field,String> map){
         this.typ = typ;
         this.fields = map;
 

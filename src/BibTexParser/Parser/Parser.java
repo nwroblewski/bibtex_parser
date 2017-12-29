@@ -14,9 +14,12 @@ public class Parser {
         this.path = path;
         this.loader = new Loader();
         this.loader.setPath(path);
-
     }
 
+    /**
+     *
+     * @return arraylist with all publications inputs
+     */
     public AllPublications Parse() {
         AllPublications inpute = new AllPublications();
         try {
@@ -30,7 +33,7 @@ public class Parser {
 
         }
         catch (Exception e) {
-            //System.out.println("Parse error (@link Parser): " +e.getMessage());
+            System.out.println("Parse error (@link Parser): " +e.getMessage());
         }
         return inpute;
     }
