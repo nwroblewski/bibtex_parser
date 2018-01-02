@@ -7,98 +7,104 @@ import BibTexParser.Types.Field;
 import java.util.*;
 
 public class BibtexTypes {
-   private Map<Type, ArrayList<Field>> fields = new HashMap<>();
+   public Map<Type, ArrayList<Field>> fields = new HashMap<>();
 
     public BibtexTypes() {
-        ArrayList <Field> required = new ArrayList<>();
+        ArrayList <Field> a1 = new ArrayList<>();
+        ArrayList <Field> a2 = new ArrayList<>();
+        ArrayList <Field> a3 = new ArrayList<>();
+        ArrayList <Field> a4 = new ArrayList<>();
+        ArrayList <Field> a5 = new ArrayList<>();
+        ArrayList <Field> a6 = new ArrayList<>();
+        ArrayList <Field> a7 = new ArrayList<>();
+        ArrayList <Field> a8 = new ArrayList<>();
+        ArrayList <Field> a9 = new ArrayList<>();
+        ArrayList <Field> a10 = new ArrayList<>();
+        ArrayList <Field> a11 = new ArrayList<>();
+        ArrayList <Field> a12 = new ArrayList<>();
+        ArrayList <Field> a13 = new ArrayList<>();
+
+        a1.add(new Field("author"));
+        a1.add(new Field("title"));
+        a1.add(new Field("journal"));
+        a1.add(new Field("year"));
+        a1.add(new Field("volume"));
+        this.fields.put(new Type("article"), a1);
+
+        a2.add(new Field("author"));
+        a2.add(new Field("title"));
+        a2.add(new Field("publisher"));
+        a2.add(new Field("year"));
+        this.fields.put(new Type("book"),a2);
 
 
-        required.add(new Field("author"));
-        required.add(new Field("title"));
-        required.add(new Field("journal"));
-        required.add(new Field("year"));
-        required.add(new Field("volume"));
-        this.fields.put(new Type("article"), required);
-        required.clear();
+
+        a3.add(new Field("title"));
+        this.fields.put(new Type("booklet"), a3);
 
 
-        required.add(new Field("author"));
-        required.add(new Field("title"));
-        required.add(new Field("publisher"));
-        required.add(new Field("year"));
-        this.fields.put(new Type("book"),required);
-        required.clear();
+        a4.add(new Field("author"));
+        a4.add(new Field("title"));
+        a4.add(new Field("chapter"));
+        a4.add(new Field("publisher"));
+        a4.add(new Field("year"));
+        this.fields.put(new Type("inbook"),a4);
 
 
-        required.add(new Field("title"));
-        this.fields.put(new Type("booklet"), required);
-        required.clear();
+
+        a5.add(new Field("author"));
+        a5.add(new Field("title"));
+        a5.add(new Field("booktitle"));
+        a5.add(new Field("publisher"));
+        a5.add(new Field("year"));
+        this.fields.put(new Type("incollection"), a5);
 
 
-        required.add(new Field("author"));
-        required.add(new Field("title"));
-        required.add(new Field("chapter"));
-        required.add(new Field("publisher"));
-        required.add(new Field("year"));
-        this.fields.put(new Type("inbook"),required);
-        required.clear();
+        a6.add(new Field("author"));
+        a6.add(new Field("title"));
+        a6.add(new Field("booktitle"));
+        a6.add(new Field("year"));
+        this.fields.put(new Type("inproceedings"),a6);
 
 
-        required.add(new Field("author"));
-        required.add(new Field("title"));
-        required.add(new Field("booktitle"));
-        required.add(new Field("publisher"));
-        required.add(new Field("year"));
-        this.fields.put(new Type("incollection"), required);
-        required.clear();
+        a7.add(new Field("title"));
+        this.fields.put(new Type("manual"),a7);
 
 
-        required.add(new Field("author"));
-        required.add(new Field("title"));
-        required.add(new Field("booktitle"));
-        required.add(new Field("year"));
-        this.fields.put(new Type("inproceedings"),required);
-        required.clear();
-
-        required.add(new Field("title"));
-        this.fields.put(new Type("manual"),required);
-        required.clear();
-
-        required.add(new Field("author"));
-        required.add(new Field("title"));
-        required.add(new Field("school"));
-        required.add(new Field("year"));
-        this.fields.put(new Type("mastersthesis"),required);
-        required.clear();
+        a8.add(new Field("author"));
+        a8.add(new Field("title"));
+        a8.add(new Field("school"));
+        a8.add(new Field("year"));
+        this.fields.put(new Type("mastersthesis"),a8);
 
 
-        this.fields.put(new Type("misc"),required);
+        this.fields.put(new Type("misc"),a9);
 
 
-        required.add(new Field("author"));
-        required.add(new Field("title"));
-        required.add(new Field("school"));
-        required.add(new Field("year"));
-        this.fields.put(new Type("phdthesis"),required);
-        required.clear();
+        a10.add(new Field("author"));
+        a10.add(new Field("title"));
+        a10.add(new Field("school"));
+        a10.add(new Field("year"));
+        this.fields.put(new Type("phdthesis"),a10);
 
 
-        required.add(new Field("title"));
-        required.add(new Field("year"));
-        this.fields.put(new Type("proceedings"),required);
-        required.clear();
 
-        required.add(new Field("author"));
-        required.add(new Field("title"));
-        required.add(new Field("institution"));
-        required.add(new Field("year"));
-        this.fields.put(new Type("techreport"),required);
-        required.clear();
+        a11.add(new Field("title"));
+        a11.add(new Field("year"));
+        this.fields.put(new Type("proceedings"),a11);
 
-        required.add(new Field("author"));
-        required.add(new Field("title"));
-        required.add(new Field("note"));
-        this.fields.put(new Type("unpublished"),required);
+
+        a12.add(new Field("author"));
+        a12.add(new Field("title"));
+        a12.add(new Field("institution"));
+        a12.add(new Field("year"));
+        this.fields.put(new Type("techreport"),a12);
+
+
+        a13.add(new Field("author"));
+        a13.add(new Field("title"));
+        a13.add(new Field("note"));
+        this.fields.put(new Type("unpublished"),a13);
 
 
 

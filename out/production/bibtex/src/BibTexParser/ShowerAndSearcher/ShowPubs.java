@@ -24,6 +24,7 @@ public class ShowPubs {
         int width = 80;
         if(o.equals("-")) o = "*";
         if(authors!=null)pubs.publist = SearchPubs.search(authors,pubs);
+        if(categories!=null) pubs.publist = SearchOnCategories.searchc(pubs,categories);
         for(PublicationInput input : pubs.publist)
             if(categories == null || categories != null){
 

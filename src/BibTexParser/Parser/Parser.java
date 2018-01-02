@@ -1,8 +1,11 @@
 package BibTexParser.Parser;
 
 import BibTexParser.Inputs.AllPublications;
+import BibTexParser.Inputs.StringInput;
 import BibTexParser.Parser.Handlers.Handler;
 import BibTexParser.Parser.Handlers.TypeHandler;
+
+import java.util.ArrayList;
 
 import static BibTexParser.Parser.BlocksParser.blockChecker;
 
@@ -20,7 +23,7 @@ public class Parser {
      *
      * @return arraylist with all publications inputs
      */
-    public AllPublications Parse() {
+    public AllPublications Parse(ArrayList<StringInput> stringVariables) {
         AllPublications inpute = new AllPublications();
         try {
             this.loader.Open();

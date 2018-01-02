@@ -1,8 +1,15 @@
 package BibTexParser;
 import BibTexParser.Inputs.AllPublications;
 import BibTexParser.Parser.Parser;
+import BibTexParser.Types.DefinedTypes.BibtexTypes;
 import BibTexParser.Verifiers.*;
 import BibTexParser.ShowerAndSearcher.*;
+import BibTexParser.Types.*;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.Map;
+
 public class Main {
     public static void main(String[] args)  {
         ArgsVerifier.verify(args);
@@ -11,14 +18,15 @@ public class Main {
         AllPublications pubs = new AllPublications();
         pubs = parser.Parse(); // w tym miejscu mamy obiekt zawierający wszystkie publikacje
 
+        //Creating a raport about the publications written in input file
+        // PublicationsVerifier.Verify(pubs);
+
         AuthorsCreator autorzy = new AuthorsCreator(args[1]);
         CategoriesCreator kategorie = new CategoriesCreator(args[2]);
-    ShowPubs.printSpecific(pubs,args[3],kategorie.getKategorie(),autorzy.getAutorzy());
 
 
-      // BibTexParser.Types.Field pole = new BibTexParser.Types.Field("author");
-      // System.out.println(pubs.publist.get(0).fields.containsKey(pole));
+        ShowPubs.printSpecific(pubs,args[3],kategorie.getKategorie(),autorzy.getAutorzy());
+
+
     }
-
-
 }
