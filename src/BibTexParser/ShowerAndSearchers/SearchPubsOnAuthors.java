@@ -1,9 +1,8 @@
-package BibTexParser.ShowerAndSearcher;
+package BibTexParser.ShowerAndSearchers;
 
 import BibTexParser.Inputs.AllPublications;
 import BibTexParser.Inputs.PublicationInput;
 import BibTexParser.Types.Field;
-import BibTexParser.Types.Type;
 
 import java.util.regex.Matcher;
 import java.util.ArrayList;
@@ -28,7 +27,7 @@ public class SearchPubsOnAuthors {
                     for(String a: authors) {
                         Pattern r =  Pattern.compile(a);
                         String authors1 = input.fields.get(new Field("author"));
-                        Matcher m =r.matcher(authors1);
+                        Matcher m = r.matcher(authors1);
                         if(m.find() && !Contains.contains(publications,input)){
                             publications.add(input);
                         }

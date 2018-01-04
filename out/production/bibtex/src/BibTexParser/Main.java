@@ -1,16 +1,9 @@
 package BibTexParser;
 import BibTexParser.Inputs.AllPublications;
 import BibTexParser.Inputs.AllStrings;
-import BibTexParser.Inputs.StringInput;
 import BibTexParser.Parser.Parser;
-import BibTexParser.Types.DefinedTypes.BibtexTypes;
 import BibTexParser.Verifiers.*;
-import BibTexParser.ShowerAndSearcher.*;
-import BibTexParser.Types.*;
-
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.Map;
+import BibTexParser.ShowerAndSearchers.*;
 
 public class Main {
     public static void main(String[] args)  {
@@ -22,7 +15,7 @@ public class Main {
         pubs = parser.Parse(strings.strings); // w tym miejscu mamy obiekt zawierający wszystkie publikacje
 
         //Creating a raport about the publications written in input file
-        // PublicationsVerifier.Verify(pubs);
+         PublicationsVerifier.Verify(pubs);
 
         AuthorsCreator autorzy = new AuthorsCreator(args[1]);
         CategoriesCreator kategorie = new CategoriesCreator(args[2]);

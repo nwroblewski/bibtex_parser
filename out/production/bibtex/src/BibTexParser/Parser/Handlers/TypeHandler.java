@@ -7,9 +7,16 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 import BibTexParser.Types.Field;
-
+/**
+ * class used to do first "layer" ofl
+ */
 public class TypeHandler {
-
+    /**
+     *
+     * @param handler Handler of entry
+     * @param input AllPublications object to which publication entries will be put
+     * @throws IOException  if a reading of content fails
+     */
     public static void HandleType(Handler handler, AllPublications input) throws IOException {
       try {
           Map<Field, String> fields = new HashMap<>();

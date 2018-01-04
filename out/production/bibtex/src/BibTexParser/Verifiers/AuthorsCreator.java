@@ -1,5 +1,7 @@
 package BibTexParser.Verifiers;
-
+/**
+ * Class
+ */
 public class AuthorsCreator {
     private String [] autorzy;
     public AuthorsCreator(String a){

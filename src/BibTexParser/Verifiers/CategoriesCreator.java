@@ -1,5 +1,8 @@
 package BibTexParser.Verifiers;
 
+/**
+ * Class used to create a categories array to be printed
+ */
 public class CategoriesCreator {
     private String [] kategorie;
     public CategoriesCreator(String k){

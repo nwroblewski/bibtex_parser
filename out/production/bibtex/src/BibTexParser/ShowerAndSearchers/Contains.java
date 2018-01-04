@@ -1,4 +1,4 @@
-package BibTexParser.ShowerAndSearcher;
+package BibTexParser.ShowerAndSearchers;
 
 import BibTexParser.Inputs.PublicationInput;
 import BibTexParser.Types.Field;

@@ -1,11 +1,10 @@
-package BibTexParser.ShowerAndSearcher;
+package BibTexParser.ShowerAndSearchers;
 
 
 import BibTexParser.Inputs.AllPublications;
 import BibTexParser.Inputs.AllStrings;
 import BibTexParser.Inputs.PublicationInput;
 import BibTexParser.Types.Field;
-import com.sun.org.apache.regexp.internal.RE;
 
 import java.util.Iterator;
 import java.util.Map;
@@ -17,14 +16,14 @@ public class ShowPubs {
 
 
     /**
-     *
+     * Prints the publications with given terms (authors, categories)
      * @param pubs  array list of all publications
      * @param o     a character to be rame
      * @param categories    all categories to be printed
-     * @param authors
+     * @param authors   all authors who participated in bibtex publication to be printed
      */
     public static void printSpecific(AllPublications pubs, String o, String[] categories, String[] authors, AllStrings strings){
-        int width = 100;
+        int width = 130;
         if(o.equals("-")) o = "*";
         if(authors!=null)pubs.publist = SearchPubsOnAuthors.search(authors,pubs);
         if(categories!=null) pubs.publist = SearchOnCategories.searchc(pubs,categories);

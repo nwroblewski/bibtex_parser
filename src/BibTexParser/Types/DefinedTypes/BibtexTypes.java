@@ -9,6 +9,9 @@ import java.util.*;
 public class BibtexTypes {
    public Map<Type, ArrayList<Field>> fields = new HashMap<>();
 
+    /**
+     * Creates a representation of all needed fields inside specific Publication type
+     */
     public BibtexTypes() {
         ArrayList <Field> a1 = new ArrayList<>();
         ArrayList <Field> a2 = new ArrayList<>();
@@ -28,7 +31,6 @@ public class BibtexTypes {
         a1.add(new Field("title"));
         a1.add(new Field("journal"));
         a1.add(new Field("year"));
-        a1.add(new Field("volume"));
         this.fields.put(new Type("article"), a1);
 
         a2.add(new Field("author"));
@@ -108,7 +110,7 @@ public class BibtexTypes {
 
 
 
-        //fields.put(new Type("book"), )
+
 
     }
 

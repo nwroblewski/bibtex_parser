@@ -1,11 +1,11 @@
-package BibTexParser.ShowerAndSearcher;
+package BibTexParser.ShowerAndSearchers;
 
 import BibTexParser.Inputs.PublicationInput;
 import BibTexParser.Types.Field;
 
 public class PrintCategory {
     /**
-     *
+     *  just prints field
      * @param input publicationinput object to be printed
      * @param c field name to be print
      * @param o character represented as string of lenght one used to print rame

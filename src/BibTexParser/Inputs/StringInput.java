@@ -20,6 +20,11 @@ public class StringInput {
         this.value = value;
     }
 
+    /**
+     *
+     * @param key a key of string variable
+     * @param value a value of string variable
+     */
     public StringInput(String key, String value){
         this.key = key;
         this.value = value;

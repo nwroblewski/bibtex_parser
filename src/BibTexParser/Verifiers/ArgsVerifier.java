@@ -2,7 +2,7 @@ package BibTexParser.Verifiers;
 
 public class ArgsVerifier {
     /**
-     *
+     * Verifies the arguments of a file
      * @param args with given arguments in the line to be verified
      */
     public static void verify(String [] args){

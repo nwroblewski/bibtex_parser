@@ -6,10 +6,14 @@ import java.io.BufferedReader;
 import java.util.ArrayList;
 
 /**
- *  Klasa StringHandler zawiera
+ *  Class to parse the string variable entries
  */
 public class StringHandler {
-
+    /**
+     *
+     * @param handler Handler of a string variable
+     * @param strings ArrayList of all StringInput where the all string variables will be put
+     */
 
     public static void HandleString(Handler handler, ArrayList<StringInput> strings){
         String key;

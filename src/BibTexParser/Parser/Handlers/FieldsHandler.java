@@ -9,7 +9,12 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class FieldsHandler {
-
+    /**
+     * Creating an object of PublicationInput and then stores it in
+     * @param typ parsed type of publication entry
+     * @param pola parsed array of all the records
+     * @param input AllPublications class object to store all of the created publication entries
+     */
     static void Handle(String typ, String[] pola, AllPublications input) {
         boolean isKey = false;
         Map<Field, String> fields = new HashMap<>();

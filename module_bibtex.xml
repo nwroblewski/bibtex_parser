@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_bibtex" default="compile.module.bibtex">
+  <dirname property="module.bibtex.basedir" file="${ant.file.module_bibtex}"/>
+  
+  <property name="module.jdk.home.bibtex" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.bibtex" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.bibtex" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.bibtex" value="-encoding UTF-8 -source 1.8 -target 1.8 ${compiler.args}"/>
+  
+  <property name="bibtex.output.dir" value="${module.bibtex.basedir}/out/production/bibtex"/>
+  <property name="bibtex.testoutput.dir" value="${module.bibtex.basedir}/out/test/bibtex"/>
+  
+  <path id="bibtex.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="bibtex.module.production.classpath">
+    <path refid="${module.jdk.classpath.bibtex}"/>
+    <path refid="library.junit-4.12.classpath"/>
+    <path refid="library.org.junit.jupiter:junit-jupiter-api:5.0.1.classpath"/>
+    <path refid="library.org.junit.contrib:junit-theories:4.12.classpath"/>
+  </path>
+  
+  <path id="bibtex.runtime.production.module.classpath">
+    <pathelement location="${bibtex.output.dir}"/>
+    <path refid="library.junit-4.12.classpath"/>
+    <path refid="library.org.junit.jupiter:junit-jupiter-api:5.0.1.classpath"/>
+    <path refid="library.org.junit.contrib:junit-theories:4.12.classpath"/>
+  </path>
+  
+  <path id="bibtex.module.classpath">
+    <path refid="${module.jdk.classpath.bibtex}"/>
+    <pathelement location="${bibtex.output.dir}"/>
+    <path refid="library.junit-4.12.classpath"/>
+    <path refid="library.org.junit.jupiter:junit-jupiter-api:5.0.1.classpath"/>
+    <path refid="library.org.junit.contrib:junit-theories:4.12.classpath"/>
+  </path>
+  
+  <path id="bibtex.runtime.module.classpath">
+    <pathelement location="${bibtex.testoutput.dir}"/>
+    <pathelement location="${bibtex.output.dir}"/>
+    <path refid="library.junit-4.12.classpath"/>
+    <path refid="library.org.junit.jupiter:junit-jupiter-api:5.0.1.classpath"/>
+    <path refid="library.org.junit.contrib:junit-theories:4.12.classpath"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.bibtex">
+    <patternset refid="ignored.files"/>
+    <exclude name="out/**"/>
+    <exclude name="out/test/**"/>
+    <exclude name="out/test/bibtex/**"/>
+    <exclude name="out/production/**"/>
+    <exclude name="out/production/bibtex/**"/>
+    <exclude name="out/production/bibtex/src/**"/>
+    <exclude name="out/production/bibtex/src/tests/**"/>
+    <exclude name="out/production/bibtex/src/BibTexParser/**"/>
+    <exclude name="out/production/bibtex/src/BibTexParser/Types/**"/>
+    <exclude name="out/production/bibtex/src/BibTexParser/Types/DefinedTypes/**"/>
+    <exclude name="out/production/bibtex/src/BibTexParser/Inputs/**"/>
+    <exclude name="out/production/bibtex/src/BibTexParser/Parser/**"/>
+    <exclude name="out/production/bibtex/src/BibTexParser/Parser/Handlers/**"/>
+    <exclude name="out/production/bibtex/src/BibTexParser/Verifiers/**"/>
+    <exclude name="out/production/bibtex/docs/**"/>
+    <exclude name="out/production/bibtex/.idea/**"/>
+    <exclude name="out/production/bibtex/.idea/libraries/**"/>
+    <exclude name="out/production/bibtex/BibTexParser/**"/>
+    <exclude name="out/production/bibtex/BibTexParser/Types/**"/>
+    <exclude name="out/production/bibtex/BibTexParser/Types/DefinedTypes/**"/>
+    <exclude name="out/production/bibtex/BibTexParser/Inputs/**"/>
+    <exclude name="out/production/bibtex/BibTexParser/Parser/**"/>
+    <exclude name="out/production/bibtex/BibTexParser/Parser/Handlers/**"/>
+    <exclude name="out/production/bibtex/BibTexParser/Verifiers/**"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.bibtex">
+    <patternset refid="excluded.from.module.bibtex"/>
+  </patternset>
+  
+  <path id="bibtex.module.sourcepath">
+    <dirset dir="${module.bibtex.basedir}/../../miki">
+      <include name="bibtex"/>
+      <include name="bibtex/src"/>
+    </dirset>
+  </path>
+  
+  <path id="bibtex.module.test.sourcepath">
+    <dirset dir="${module.bibtex.basedir}/../../miki">
+      <include name="bibtex/src/tests"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.bibtex" depends="compile.module.bibtex.production,compile.module.bibtex.tests" description="Compile module bibtex"/>
+  
+  <target name="compile.module.bibtex.production" depends="register.custom.compilers" description="Compile module bibtex; production classes">
+    <mkdir dir="${bibtex.output.dir}"/>
+    <javac2 destdir="${bibtex.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.bibtex}/javac">
+      <compilerarg line="${compiler.args.bibtex}"/>
+      <bootclasspath refid="bibtex.module.bootclasspath"/>
+      <classpath refid="bibtex.module.production.classpath"/>
+      <src refid="bibtex.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.bibtex"/>
+    </javac2>
+    
+    <copy todir="${bibtex.output.dir}">
+      <fileset dir="${module.bibtex.basedir}">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.bibtex.basedir}/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.bibtex.tests" depends="register.custom.compilers,compile.module.bibtex.production" description="compile module bibtex; test classes" unless="skip.tests">
+    <mkdir dir="${bibtex.testoutput.dir}"/>
+    <javac2 destdir="${bibtex.testoutput.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.bibtex}/javac">
+      <compilerarg line="${compiler.args.bibtex}"/>
+      <bootclasspath refid="bibtex.module.bootclasspath"/>
+      <classpath refid="bibtex.module.classpath"/>
+      <src refid="bibtex.module.test.sourcepath"/>
+      <patternset refid="excluded.from.compilation.bibtex"/>
+    </javac2>
+    
+    <copy todir="${bibtex.testoutput.dir}">
+      <fileset dir="${module.bibtex.basedir}/src/tests">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="clean.module.bibtex" description="cleanup module">
+    <delete dir="${bibtex.output.dir}"/>
+    <delete dir="${bibtex.testoutput.dir}"/>
+  </target>
+</project>

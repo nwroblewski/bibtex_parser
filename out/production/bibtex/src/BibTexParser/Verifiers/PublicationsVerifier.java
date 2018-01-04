@@ -8,7 +8,10 @@ import BibTexParser.Types.Field;
 import java.util.ArrayList;
 
 public class PublicationsVerifier {
-
+    /**
+     * Method used to verify all publication entries and print the raport about them
+     * @param pubs AllPublication object containing all of the publication entries
+     */
     public static void Verify(AllPublications pubs){
         try{
             System.out.println("Raport poprawności publikacji: ");
@@ -20,7 +23,7 @@ public class PublicationsVerifier {
                 for(Field pole: required){
                     if(!input.fields.containsKey(pole)){
                         if(pole.equals(new Field("author"))){
-                            if(!input.fields.containsKey(new Field("editor"))) System.out.println(input.typ+" ("+input.fields.get(new Field("viewKey"))+")"+" nie ma pola author ani editor!");
+                            if(!input.fields.containsKey(new Field("editor"))) System.out.println(input.typ+" ("+input.fields.get(new Field("viewKey"))+")"+" nie posiada pola author ani editor!");
                         }
                         else System.out.println(input.typ +" ("+input.fields.get(new Field("viewKey"))+")"+ " nie posiada wymaganego pola: " + pole);
                     }

@@ -20,8 +20,9 @@ public class Parser {
     }
 
     /**
-     *
-     * @return arraylist with all publications inputs
+     * parses the input file and calls the apropriate methods to create objects
+     * @param stringVariables a stringinput class array list to hold every string variable occurance in bibtex file
+     * @return AllPublications object that stores all of the publication entries in bibtex file
      */
     public AllPublications Parse(ArrayList<StringInput> stringVariables) {
         AllPublications inpute = new AllPublications();
