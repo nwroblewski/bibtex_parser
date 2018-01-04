@@ -3,6 +3,7 @@ package BibTexParser.Parser;
 import BibTexParser.Inputs.AllPublications;
 import BibTexParser.Inputs.StringInput;
 import BibTexParser.Parser.Handlers.Handler;
+import BibTexParser.Parser.Handlers.StringHandler;
 import BibTexParser.Parser.Handlers.TypeHandler;
 
 import java.util.ArrayList;
@@ -13,7 +14,6 @@ public class Parser {
     private Loader loader;
     private String path;
     public Parser(String path) {
-        this.path = path;
         this.path = path;
         this.loader = new Loader();
         this.loader.setPath(path);
@@ -31,7 +31,7 @@ public class Parser {
             while (this.loader.entryNotDone(this.loader.reader)) {
                 Handler handler = blockChecker(this.loader.nextEntry());
                 if(handler!=null && !handler.name.equals("@STRING")) TypeHandler.HandleType(handler,inpute);
-                // tutaj stringi
+                if(handler!=null && handler.name.equals("@STRING")) StringHandler.HandleString(handler, stringVariables);
             }
 
         }

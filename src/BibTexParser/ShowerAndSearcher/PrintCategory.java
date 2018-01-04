@@ -11,7 +11,7 @@ public class PrintCategory {
      * @param o character represented as string of lenght one used to print rame
      * @param width the width of rame
      */
-    public static void printC(PublicationInput input, String c, String o, int width ){
+    protected static void printC(PublicationInput input, String c, String o, int width ){
         if(input.fields.containsKey(new Field(c)) && !c.equals("viewKey")){
            // System.out.println("");
             System.out.print(o+" ");

@@ -2,8 +2,11 @@ package BibTexParser.ShowerAndSearcher;
 
 
 import BibTexParser.Inputs.AllPublications;
+import BibTexParser.Inputs.AllStrings;
 import BibTexParser.Inputs.PublicationInput;
 import BibTexParser.Types.Field;
+import com.sun.org.apache.regexp.internal.RE;
+
 import java.util.Iterator;
 import java.util.Map;
 
@@ -20,13 +23,13 @@ public class ShowPubs {
      * @param categories    all categories to be printed
      * @param authors
      */
-    public static void printSpecific(AllPublications pubs,String o,String[] categories,String[] authors ){
-        int width = 80;
+    public static void printSpecific(AllPublications pubs, String o, String[] categories, String[] authors, AllStrings strings){
+        int width = 100;
         if(o.equals("-")) o = "*";
-        if(authors!=null)pubs.publist = SearchPubs.search(authors,pubs);
+        if(authors!=null)pubs.publist = SearchPubsOnAuthors.search(authors,pubs);
         if(categories!=null) pubs.publist = SearchOnCategories.searchc(pubs,categories);
-        for(PublicationInput input : pubs.publist)
-            if(categories == null || categories != null){
+        if(strings!=null) ReplaceStrings.Replace(pubs,strings);
+        for(PublicationInput input : pubs.publist){
 
                 //System.out.println("");
                 for(int i=0; i< width;i++){

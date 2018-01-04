@@ -13,7 +13,7 @@ import java.util.regex.Pattern;
  * this class is used to search arraylist of all publications to
  * give a list of those which i want to print with given authors
  */
-public class SearchPubs {
+public class SearchPubsOnAuthors {
     /**
      *
      * @param authors table of authors whom publications will be printed

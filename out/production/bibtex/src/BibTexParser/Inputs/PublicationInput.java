@@ -14,6 +14,5 @@ public class PublicationInput {
     public PublicationInput(Type typ, Map<Field,String> map){
         this.typ = typ;
         this.fields = map;
-
     }
 }

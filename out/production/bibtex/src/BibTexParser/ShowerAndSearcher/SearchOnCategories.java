@@ -7,7 +7,7 @@ import BibTexParser.Types.Type;
 import java.util.ArrayList;
 
 public class SearchOnCategories {
-    public static ArrayList searchc(AllPublications pubs, String [] categories){
+    protected static ArrayList searchc(AllPublications pubs, String [] categories){
         ArrayList<PublicationInput> searched = new ArrayList<>();
         try{
             for(PublicationInput input : pubs.publist){
